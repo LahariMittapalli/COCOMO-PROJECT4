@@ -45,3 +45,14 @@ Use of software tools= 1
 Required development schedule= 1
 
 **EAF**=1*0.94*0.85*1*1*1*0.87*1*1.13*1*1*1*1*1*1= **0.7854969** ~ **0.79** 
+
+KLOC = 32 (from the c++ code given)
+
+We agreed that our project is **Semi-Detached**, so a=3.0, b=1.12, c=2.5, d=0.35.
+
+E = (3.0*((32)^1.12))*0.79 = 3.0*48.50293012833276*0.79 = 114.951944403 == 114.952
+
+**Time = (c*((E)^d))**
+
+**Time** = 2.5*((114.952)^0.35) = 2.5*5.262362800340399 = **13.155907** 
+
