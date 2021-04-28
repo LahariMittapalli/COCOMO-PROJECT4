@@ -1,4 +1,3 @@
-# %%
 import math
   
 # Function to calculate parameters of Basic COCOMO
@@ -44,5 +43,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# %%
