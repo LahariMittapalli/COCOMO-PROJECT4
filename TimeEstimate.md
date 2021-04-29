@@ -50,9 +50,11 @@ KLOC = 32 (from the c++ code given)
 
 We agreed that our project is **Oragnic**, so a=2.4, b=1.05, c=2.5, d=0.38
 
-E = (2.4*((2)^1.05))*0.79 = 2.0705298476828*2.4*0.79= **3.925722984 Person-Month**
+Effort = (2.4*((2)^1.05))*0.79 = 2.0705298476828*2.4*0.79= **3.925722984 Person-Month**
 
 **Time = (c*((E)^d))**
 
 **Time** = 2.5*((3.925722984)^0.38) = 1.6814675909619*2.5= **4.20365 Months**
+
+**Person Required** = Effort / Time = 3.9257/4.20365 = 0.933 ~ **1**
 
