@@ -1,10 +1,10 @@
 # COCOMO-PROJECT4
 
 Java Basic model
-![alt text](https://https://github.com/LahariMittapalli/COCOMO-PROJECT4/blob/main/Java%20COCOMO%20Basic%20Testing%20Output.png)
+![alt text](https://github.com/LahariMittapalli/COCOMO-PROJECT4/blob/main/Java%20COCOMO%20Basic%20Testing%20Output.png)
 
 Java Intermediate model
-![alt text](https://https://github.com/LahariMittapalli/COCOMO-PROJECT4/blob/main/Java%20COCOMO%20Intermediate%20Testing%20Output.png)
+![alt text](https://github.com/LahariMittapalli/COCOMO-PROJECT4/blob/main/Java%20COCOMO%20Intermediate%20Testing%20Output.png)
 
 Basic model 
 ![alt test](https://github.com/LahariMittapalli/COCOMO-PROJECT4/blob/main/cocomo_basic.PNG)
