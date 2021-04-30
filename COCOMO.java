@@ -27,7 +27,7 @@ public class COCOMO {
 		else if (size > 300)
 			model = 2; // embedded
 
-		System.out.println("The mode is " + mode[model]);
+		System.out.println("\nThe mode is " + mode[model]);
 
 		if (model == 0) {
 			// Calculate Effort
@@ -39,19 +39,19 @@ public class COCOMO {
 		}
 		else if (model == 1) {
 			double EAF = 1;
-			System.out.print("\nRequired software reliability (Very Low (0), Low(1), Nominal(2), High(3), Very High(4)): ");
+			System.out.print("Required software reliability (Very Low (0), Low(1), Nominal(2), High(3), Very High(4)): ");
 			String RELY = in.nextLine();
-			System.out.print("Database size (Low(1), Nominal(2), High(3), Very High(4)): ");
+			System.out.print("Database size (Low(0), Nominal(1), High(2), Very High(3)): ");
 			String DATA = in.nextLine();
 			System.out.print("Product complexity (Very Low (0), Low(1), Nominal(2), High(3), Very High(4), Extra High(5)): ");
 			String CPLX = in.nextLine();
-			System.out.print("Execution time constraint (Nominal(2), High(3), Very High(4), Extra High(5)): ");
+			System.out.print("Execution time constraint (Nominal(0), High(1), Very High(2), Extra High(3)): ");
 			String TIME = in.nextLine();
-			System.out.print("Main storage constraint (Nominal(2), High(3), Very High(4), Extra High(5)): ");
+			System.out.print("Main storage constraint (Nominal(0), High(1), Very High(2), Extra High(3)): ");
 			String STOR = in.nextLine();
-			System.out.print("Virtual machine volatility (Low(1), Nominal(2), High(3), Very High(4)): ");
+			System.out.print("Virtual machine volatility (Low(0), Nominal(1), High(2), Very High(3)): ");
 			String VIRT = in.nextLine();
-			System.out.print("Computer turnaround time (Low(1), Nominal(2), High(3), Very High(4)): ");
+			System.out.print("Computer turnaround time (Low(0), Nominal(1), High(2), Very High(3)): ");
 			String TURN = in.nextLine();
 			System.out.print("Analyst capability (Very Low (0), Low(1), Nominal(2), High(3), Very High(4)): ");
 			String ACAP = in.nextLine();
@@ -174,6 +174,5 @@ public class COCOMO {
 		float size = 2;
 		calculate(table, 3, mode, size);
 	}
-
 
 }
