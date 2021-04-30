@@ -159,6 +159,11 @@ public class COCOMO {
 			time = table[model][2] * (float) Math.pow(effort, table[model][3]);
 			staff = effort / time;
 		}
+		else if (model == 2) {
+			System.out.println("We have not implemented the Embeded version.");
+			in.close();
+			return;
+		}
 
 		// Output the values calculated
 		System.out.println("\nEffort = " + effort + " Person-Month");
@@ -174,5 +179,4 @@ public class COCOMO {
 		float size = 2;
 		calculate(table, 3, mode, size);
 	}
-
 }
