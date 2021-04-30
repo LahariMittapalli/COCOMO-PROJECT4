@@ -7,11 +7,6 @@ public class COCOMOTest {
 	static ArrayList<Double> arrPersons = new ArrayList<Double>();
 	static Random rand = new Random();
 	
-	public static int randInt(int min, int max) {
-	    int randomNum = rand.nextInt((max - min) + 1) + min;
-	    return randomNum;
-	}
-		
 	// Function for rounding off float to int
 	static int fround(float x) {
 		int a;
@@ -35,11 +30,8 @@ public class COCOMOTest {
 
 
 		if (model == 0) {
-			// Calculate Effort
 			effort = table[model][0] * (float) Math.pow(size, table[model][1]);
-			// Calculate Time
 			time = table[model][2] * (float) Math.pow(effort, table[model][3]);
-			// Calculate Persons Required
 			staff = effort / time;
 		}
 		else if (model == 1) {
@@ -56,7 +48,7 @@ public class COCOMOTest {
 			else if (x == 1) EAF *= 1;
 			else if (x == 2) EAF *= 1.08;
 			else if (x == 3) EAF *= 1.16;
-			x = randInt(0, 6);
+			x = rand.nextInt(6);
 			if (x == 0) EAF *= 0.7;
 			else if (x == 1) EAF *= 0.85;
 			else if (x == 2) EAF *= 1;
@@ -134,6 +126,10 @@ public class COCOMOTest {
 			time = table[model][2] * (float) Math.pow(effort, table[model][3]);
 			staff = effort / time;
 		}
+		else if (model == 2) {
+			System.out.println("We have not implemented the Embeded version.");
+			return;
+		}
 		arrEffort.add((double) effort);
 		arrTime.add((double) time);
 		arrPersons.add((double) fround(staff));
@@ -145,12 +141,12 @@ public class COCOMOTest {
 
 		// We use 741 as the upperbound since the graph in the paper only shows up to
 		// 10,000 Person-Months (roughly size 741)
-		int upperbound = 741 - 2;
-		int int_random = 0;
+		int upperbound = 300 - 2;
+		int int_random = 2;
 		int numExperiment = 20000;
 		for (int i = 0; i < numExperiment; i++) {
-			int_random = rand.nextInt(upperbound) + 2;
-			calculate(table, 3, mode, int_random);
+			int_random = rand.nextInt(upperbound) ;
+			calculate(table, 3, mode, int_random + 2);
 		}
 		
 		double effort = 0, time = 0, persons = 0;
@@ -174,8 +170,8 @@ public class COCOMOTest {
 			totTime += time;
 			totPersons += persons;
 		}
-		System.out.println("Effort: max = " + maxEffort + ", mean = " + totEffort / numExperiment + ", min = " + minEffort);
-		System.out.println("Time: max = " + maxTime + ", mean = " + totTime / numExperiment + ", min = " + minTime);
-		System.out.println("Persons: max = " + maxPersons + ", mean = " + totPersons / numExperiment + ", min = " + minPersons);
+		System.out.println("Effort: max = " + maxEffort + ", mean = " + totEffort / arrEffort.size() + ", min = " + minEffort);
+		System.out.println("Time: max = " + maxTime + ", mean = " + totTime / arrTime.size() + ", min = " + minTime);
+		System.out.println("Persons: max = " + maxPersons + ", mean = " + totPersons / arrPersons.size() + ", min = " + minPersons);
 	}
 }
