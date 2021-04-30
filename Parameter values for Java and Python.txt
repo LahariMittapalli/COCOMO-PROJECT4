@@ -1,0 +1,1 @@
+Between the Java and Python program, we decided to use the Boehm's paper cost drivers' values. We hard coded those values into our code.
