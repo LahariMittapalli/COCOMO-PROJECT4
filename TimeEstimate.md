@@ -58,3 +58,6 @@ Effort = (2.4*((2)^1.05))*0.79 = 2.0705298476828*2.4*0.79= **3.925722984 Person-
 
 **Person Required** = Effort / Time = 3.9257/4.20365 = 0.933 ~ **1**
 
+
+The **COCOMO Model** cannot be used to estimate the time this project will take because the size of this project is too small( in total it is fewer than 2000 lines). 
+
