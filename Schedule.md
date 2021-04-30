@@ -9,6 +9,6 @@
 #Time planned = 35 minutes
 
 
-| Scheduled Time | Real Time | 
+| **Scheduled Time** | **Real Time** | 
 | --------------- | --------------- |
-|  | Total time taken by 4 of us is 15 hours 35 minutes|
+|From COCOMO model, the estimated time for our project is 4.2 months and the number of persons required is 1  | Total time taken by 4 of us is 15 hours 35 minutes|
